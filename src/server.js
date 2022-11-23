@@ -6,10 +6,15 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 dotenv.config();
-
+console.log('abovre poet');
 const port = process.env.PORT  || 8000;
+console.log('abovre poet');
+
 //mongodb connection
 require('./DB/connection')
+
+console.log('after db');
+
 const emailRegister = require('./Model/User')
 
 //routes
