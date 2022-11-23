@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const MONGOURI = process.env.Mongo_uri
 
-mongoose.connect(process.env.Mongo_uri, {
+mongoose.connect(MONGOURI, {
     //depreciation warning
     useNewUrlParser:true,
     useUnifiedTopology:true
