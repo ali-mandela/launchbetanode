@@ -5,15 +5,11 @@ const cors = require('cors')
 const app = express();
 app.use(express.json());
 app.use(cors());
-dotenv.config();
-console.log('abovre poet');
-const port = process.env.PORT  || 8000;
-console.log('abovre poet');
+dotenv.config(); 
+const port = process.env.PORT  || 8000; 
 
 //mongodb connection
-require('./DB/connection')
-
-console.log('after db');
+require('./DB/connection') 
 
 const emailRegister = require('./Model/User')
 
