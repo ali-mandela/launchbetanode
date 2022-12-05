@@ -20,6 +20,8 @@ app.get('/', (req, res)=>{
 })
 app.get('/registter', async(req,res)=>{
     const num =await emailRegister.countDocuments(); 
+    // console.log(num);
+// 
     res.json({num:num});
 })
 
